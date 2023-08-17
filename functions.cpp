@@ -1,13 +1,18 @@
 #include <iostream>
 
-void github(){
-    std::cout << "this is a github aimed test file" << std::endl;
-    std::cout << "this is a github aimed test file" << std::endl;
-    std::cout << "this is a github aimed test file" << std::endl;
-    std::cout << "this is a github aimed test file" << std::endl;
-}
+void github(std::string oracion);
+
 int main()
 {
-    github();
+    std::string sentence = "This is a sentence amigos";
+    github(sentence);
+    github(sentence);
+    github(sentence);
+    github(sentence);
+
     return 0; 
+}
+
+void github(std::string oracion){
+    std::cout << oracion << std::endl;
 }
