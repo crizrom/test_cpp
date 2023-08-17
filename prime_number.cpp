@@ -6,7 +6,7 @@ int main(){
     int low;
     int upper;
 
-    std::cout << "PRIME NUMBER IN RANGE" << '\n';
+    std::cout << "DIVIDE NUMBER IN RANGE" << '\n';
     std::cout << "------------------------------------------" << '\n';
     std::cout << "Introduce a lower limit and an upper limit" << '\n';
     
@@ -15,13 +15,19 @@ int main(){
     std::cout << "UPPER LIMIT: ";
     std::cin >> upper;
     range(low, upper);
-
+ 
     return 0;
 }
 
 void range(int low, int upper){
+    double y;
     for (int i = low; i <= upper; i++){
-        std::cout << i;
+        for (int z = low; z <= upper; z++){
+            y = i/z;
+            std::cout << y << " ";
+        }
+        
+        std::cout << '\n';
     }
 
 }
